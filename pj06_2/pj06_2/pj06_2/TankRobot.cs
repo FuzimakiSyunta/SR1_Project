@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace pj06_2
 {
@@ -12,6 +13,7 @@ namespace pj06_2
         {
 
         }
+
 
         //キャノン砲を撃つ
         public override void Attack()

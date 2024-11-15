@@ -17,7 +17,7 @@ public class Robot
 		return name;
 	}
 	//攻撃する
-    public virtual void Attack()
+    public void Attack()
     {
         Console.WriteLine("{0}は、攻撃した!", name);
     }
