@@ -2,9 +2,8 @@
 
 public class Robot
 {
-    //フィールド
-    protected string name;
-
+	//フィールド
+	protected string name;
     public Robot(string name)
     {
         this.name = name;
