@@ -18,6 +18,9 @@ namespace pj07_1
             {
                 int r = random.Next(-5, 5);
                 numbers.Add(r);
+            }
+            foreach (int r in numbers)
+            {
                 Console.WriteLine(r);
             }
             Console.WriteLine("---");
