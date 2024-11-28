@@ -3,45 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Class1;
 
 namespace Hello
 {
     internal class Player
     {
-        //フィールド
-        private string name;
-        private int level;
-
-        //コンストラクタ
-        public Player(string name,int level)
+        //Listコレクション items を作成する
+        List<Item> items = new List<Item>();
+        public void AddItem(Item item)
         {
-            this.name = name;
-            this.level = level;
+            items.Add(item);
         }
-        //攻撃
-        public void Attack()
+        public virtual void UseItem()
         {
-            Console.WriteLine("攻撃!!");
-        }
-        //防御
-        public void Defence()
-        {
-            Console.WriteLine("防御した");
-        }
-        //レベルアップ
-        public void LevelUp()
-        {
-            level++;
-        }
-        //名前を聞く
-        public string GetName()
-        {
-            return name;
-        }
-        //レベルを聞く
-        public int GetLevel()
-        {
-            return level;
+            foreach (Item item in items)
+            {
+                item.Use();
+            }
         }
     }
 
